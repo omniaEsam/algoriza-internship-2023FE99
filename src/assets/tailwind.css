@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav{
+    padding-left: 100px ;
+    padding-right: 100px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url("../assets/icons/calendar 1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin
+}
