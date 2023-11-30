@@ -11,6 +11,10 @@ module.exports = {
         "gray_3" : "#EBEBEB",
         "gray_6": "#F2F2F2",
         "dangar": "#FCEFCA",
+      },
+      boxShadow: {
+        '3xl': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        '4xl': '0px 4px 37px 0px rgba(0, 0, 0, 0.15)'
       }
     },
     fontFamily:{

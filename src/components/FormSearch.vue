@@ -1,24 +1,12 @@
 <template>
    <!-- form search -->
     <form class=" bg-white relative mx-[105px] flex flex-row flex-nowrap 
-    justify-between p-3 rounded-md bottom-12 gap-x-2 shadow-[0_4px_37px_0_rgba(0, 0, 0, 0.15)] text-xs 
-   ">
+    justify-between p-3 rounded-md bottom-12 gap-x-2 shadow-4xl
+     text-xs ">
 
-    <!--location icon -->
-    <img src="../assets/icons/location 1.png" alt="location-icon" class="w-5 h-5 absolute top-6 left-5 ">
-
-    <!-- select input -->
-    <select name="city" id="city" 
-    class="rounded-md bg-gray_6 pt-[11px] px-7 pb-3 w-[206px]
-    text-gray_2 " required>
-
-     <!-- placeholder -->
-        <option value="" disabled selected hidden > Where are you going?</option>
-        <option value="Cario">Cario</option>
-        <option value="Cario">Cario</option>
-        <option value="Cario">Cario</option>
-    </select>
-
+   <!-- search hotel destination select input -->
+     <SearchHotelDestination/>
+    
      <!-- Check in date input  -->
       <input type="text" onfocus="(this.type='date') " onblur="(this.type='text')" placeholder="Check in date" class="rounded-md bg-gray_6 pt-[11px] px-3 pb-3 
       w-[147px]" required>
@@ -52,6 +40,7 @@
 
 <script setup>
 import Button from "../components/Button.vue"
+import SearchHotelDestination from '../components/SearchHotelDestination.vue'
 import { useAuthStore } from '../stores/authStore';
 
 const authStore = useAuthStore()
