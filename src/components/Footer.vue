@@ -1,9 +1,7 @@
 <template>
     <footer>
-      <h3 class="text-gray text-[28px] font-semibold text-center">Explore the world with My Dream place</h3>
-      <p class="text-blue_1 text-center text-[16px] mt-4 mb-20">Discover new places and experiences</p>
       <!-- logo and links -->
-      <div class="flex flex-row flex-nowrap justify-between gap-16 mx-[100px] mb-[60px]">
+      <div class="flex flex-row flex-nowrap justify-between gap-16 mx-[100px]  mb-[60px]">
         <div>
             <img src="../assets/images/logo.png" alt="logo" >   
             <p class="text-gray_2 text-sm ml-7 pr-10 w-64">Your next goto companion for travel</p>

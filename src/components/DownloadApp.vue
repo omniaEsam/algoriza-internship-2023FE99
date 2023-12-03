@@ -11,7 +11,9 @@
          <img src="../assets/images/download_app2.png" alt="mobail-phone" class="relative right-[5px] h-[260px] top-2 ">
        
       </div>
+      
     </section>
+    
 </template>
 
 <script setup>

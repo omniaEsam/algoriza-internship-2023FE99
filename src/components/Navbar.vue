@@ -1,15 +1,18 @@
 <template>
-     <nav class="bg-white py-3.5 " >
+     <nav class=" py-3.5 " :class="[route.name === 'searchhotel'? 'bg-blue_2 , h-[200px]' : 'bg-white']" >
     <div class=" md:flex items-center justify-between ">
       <!-- Logo -->
       <div >
-            <img src="../assets/images/logo.png" alt="logo" class="h-6  w-auto  ">   
+              
+            <img src="../assets/images/logo_searchResult.png" alt="logo" class="h-6  w-auto" v-if="route.name === 'searchhotel'">  
+            <img src="../assets/images/logo.png" alt="logo" class="h-6  w-auto  " v-else>  
        </div>
 
       <!-- Navigation Links -->
       <ul v-if="showListPages" class="md:flex space-x-9 cursor-pointer">
+
          <li v-for="link in links" :key="link.name">
-          <router-link :to="link.link" class="text-gray_1 font-normal">{{link.name}}</router-link>
+          <router-link :to="link.link" class=" font-normal" :class="[route.name === 'searchhotel' ?  'text-white' :'text-gray_1']">{{link.name}}</router-link>
           </li>
       </ul>
 

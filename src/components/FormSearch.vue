@@ -78,8 +78,8 @@ onMounted(async ()=>{
     try{
         const response = await axios.get('https://booking-com15.p.rapidapi.com/api/v1/hotels/searchDestination',{
             params : {query: 'egypt'},
-        headers: {
-    'X-RapidAPI-Key': '08a91be66amsh67b9fc348c87bb5p1f0ba3jsnfca4a71ec333',
+      headers: {
+    'X-RapidAPI-Key': 'feb14b8563msh9c9a712630ac177p19aac5jsncdc577b69567',
     'X-RapidAPI-Host': 'booking-com15.p.rapidapi.com'
   }
         })

@@ -6,6 +6,7 @@ import EnjoyVacation from '../components/EnjoyVacation.vue'
 import GetInspiration from '../components/GetInspiration.vue'
 import PopularHotels from '../components/PopularHotels.vue'
 import DownloadApp from '../components/DownloadApp.vue'
+import DiscoverAndExplore from '../components/DiscoverAndExplore.vue'
 </script>
 
 <template>
@@ -17,5 +18,6 @@ import DownloadApp from '../components/DownloadApp.vue'
     <GetInspiration/>
     <PopularHotels/>
     <DownloadApp/>
+    <DiscoverAndExplore/>
   </main>
 </template>
