@@ -1,5 +1,5 @@
 <template>
-     <nav class="bg-white py-3.5">
+     <nav class="bg-white py-3.5 " >
     <div class=" md:flex items-center justify-between ">
       <!-- Logo -->
       <div >
@@ -25,10 +25,12 @@
 
 <script setup>
 import Button from '../components/Button.vue'
-import {  computed, onMounted, ref } from "vue";
+import {  computed, onMounted, ref, watch } from "vue";
 import { useRoute } from 'vue-router';
 import { useAuthStore } from '../stores/authStore';
 
+const navbarColor = ref('blue');
+const navbarHeight = ref('60px');
 
 
 let links = ref([
